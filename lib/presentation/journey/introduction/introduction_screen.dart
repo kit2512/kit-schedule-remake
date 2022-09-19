@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:schedule/presentation/journey/main/main_constants.dart';
-import 'package:schedule/presentation/themes/theme_colors.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:schedule/presentation/themes/theme_colors.dart';
 import 'package:schedule/presentation/themes/theme_text.dart';
 import 'package:schedule/service/share_service.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'introduction_constants.dart';
 
@@ -37,7 +35,7 @@ class IntroductionScreen extends StatelessWidget {
                 ),
               ),
               Text(
-                AppLocalizations.of(context)!.introduction,
+                AppLocalizations.of(context).introduction,
                 style: ThemeText.labelStyle.copyWith(
                   color: AppColor.personalScheduleColor2,
                 ),
@@ -56,7 +54,7 @@ class IntroductionScreen extends StatelessWidget {
         child: Container(
             padding: EdgeInsets.all(IntroductionConstants.padding),
             child: Text(
-              AppLocalizations.of(context)!.ok,
+              AppLocalizations.of(context).ok,
               style: ThemeText.buttonLabelStyle
                   .copyWith(color: AppColor.personalScheduleColor2),
             )),

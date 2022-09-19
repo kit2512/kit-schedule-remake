@@ -34,7 +34,7 @@ class SchoolScheduleWidget extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              Text(AppLocalizations.of(context)!.school,
+              Text(AppLocalizations.of(context).school,
                   style: ThemeText.titleStyle.copyWith(
                     color: AppColor.scheduleType,
                     fontWeight: FontWeight.bold,
@@ -68,7 +68,7 @@ class SchoolScheduleWidget extends StatelessWidget {
                   )
                 : Align(
                     alignment: Alignment.center,
-                    child: Text(AppLocalizations.of(context)!.noData,
+                    child: Text(AppLocalizations.of(context).noData,
                         style: ThemeText.textStyle
                             .copyWith(color: AppColor.scheduleType)),
                   ),

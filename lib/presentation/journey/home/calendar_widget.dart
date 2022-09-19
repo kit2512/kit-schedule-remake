@@ -28,7 +28,7 @@ class _CalendarViewState extends State<CalendarView> {
           borderRadius: BorderRadius.vertical(bottom: Radius.circular(30)),
           color: Color(0xffFCFAF3)),
       child: TableCalendar(
-        locale: AppLocalizations.of(context)!.localeName,
+        locale: AppLocalizations.of(context).localeName,
         currentDay: _selectedDay,
         firstDay: DateTime.utc(2010, 10, 16),
         lastDay: DateTime.utc(2030, 3, 14),
