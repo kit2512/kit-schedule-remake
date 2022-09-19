@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "275394229984",
+    "project_id": "kit-schedule-remake",
+    "storage_bucket": "kit-schedule-remake.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275394229984:android:f49f1b3d1c19aea01e0285",
+        "android_client_info": {
+          "package_name": "com.example.kit_schedule_remake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275394229984-ta2qlr0k0gqj1rkn4uppnnlpotfm8duj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kit_schedule_remake",
+            "certificate_hash": "01dd74b7e50d1d9ecf9f91bfccc701c3228eb2ef"
+          }
+        },
+        {
+          "client_id": "275394229984-6du1sol76ebaj0qal3at3mbdalc8mbh2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9gxOUkeavzKXnkaYCQ267dMYSszxE6Y8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275394229984-6du1sol76ebaj0qal3at3mbdalc8mbh2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
