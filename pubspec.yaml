@@ -14,7 +14,7 @@ description: A new Flutter application.
 version: 6.0.3+2
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -24,58 +24,57 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.3
   # DateFormat
-  intl: any
+  intl: ^0.17.0
   # Table Calendar
-  table_calendar: any
+  table_calendar: ^3.0.7
   # shared_preferences
-  shared_preferences: any
+  shared_preferences: ^2.0.15
   # Date Format
-  date_format: any
+  date_format: ^2.0.6
   #toast: ^0.1.5
   # sqlite
   #sqflite: ^1.2.0
-  hive: any
-#  sqflite: ^2.0.0+3
+  hive: ^2.2.3
+  #  sqflite: ^2.0.0+3
   # Simple Animation
-  simple_animations: any
+  simple_animations: ^5.0.0+2
   # Bloc
   flutter_bloc: ^7.0.1
   # Equatable
-  equatable: any
+  equatable: ^2.0.5
   # Dio
-  dio: any
+  dio: ^4.0.6
   # Svg image
-  #flutter_svg: ^0.17.4
-  flutter_svg: any
+  flutter_svg: ^1.1.5
   # Worm indicator
   #worm_indicator: 0.2.1
   # Bottom Navigator
-  google_nav_bar: any
+  google_nav_bar: ^5.0.6
   # DatePicker
-  flutter_rounded_date_picker: any
+  flutter_rounded_date_picker: ^3.0.2
   # Dialog
-  awesome_dialog: any
-  get_it: any
-  path_provider: any
-  crypto: any
-  flutter_screenutil: any
+  awesome_dialog: ^3.0.1
+  get_it: ^7.2.0
+  path_provider: ^2.0.11
+  crypto: ^3.0.2
+  flutter_screenutil: ^5.5.4
   #cupertino_date_textbox: ^1.0.0+3
-  firebase_core: any
-  store_redirect: any
-  url_launcher: any
-  cloud_firestore: any
-  connectivity: any
-  flutter_keyboard_visibility: any
+  firebase_core: ^1.22.0
+  store_redirect: ^2.0.1
+  url_launcher: ^6.1.5
+  cloud_firestore: ^3.4.8
+  connectivity_plus: ^2.3.7
+  flutter_keyboard_visibility: ^5.3.0
   flutter_localizations: # Add this line
     sdk: flutter
-  device_calendar: ^4.0.1-dev.13167
-  permission_handler: any
+  permission_handler: ^10.0.0
+  device_calendar: 4.1.0
 
 dev_dependencies:
+  flutter_native_splash: ^2.2.9
   flutter_test:
     sdk: flutter
   mockito: ^5.0.11
-  flutter_native_splash: ^1.2.0
   hive_generator: ^1.1.0
   build_runner: ^2.0.0
 

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:schedule/common/enums/view_state.dart';
 import 'package:schedule/common/injector/injector.dart';
 import 'package:schedule/presentation/journey/add_scores/add_score_constants.dart';
@@ -9,8 +11,6 @@ import 'package:schedule/presentation/journey/search_subject/bloc/search_subject
 import 'package:schedule/presentation/themes/theme_colors.dart';
 import 'package:schedule/presentation/themes/theme_text.dart';
 import 'package:schedule/presentation/widget/text_field_widget/text_field_widget.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class SearchSubjectDialog extends StatelessWidget {
   SearchSubjectDialog({Key? key, required this.grade}) : super(key: key);

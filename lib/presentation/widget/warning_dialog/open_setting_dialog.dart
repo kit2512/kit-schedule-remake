@@ -7,25 +7,27 @@ import 'package:schedule/presentation/journey/main/main_constants.dart';
 import 'package:schedule/presentation/themes/theme_colors.dart';
 import 'package:schedule/presentation/themes/theme_text.dart';
 
-void openSettingDiaLog(
-    {required BuildContext context,
-     }) {
+void openSettingDiaLog({
+  required BuildContext context,
+}) {
   AwesomeDialog(
       dismissOnTouchOutside: false,
       context: context,
       dialogType: DialogType.WARNING,
       animType: AnimType.BOTTOMSLIDE,
       body: Padding(
-          padding: const EdgeInsets.symmetric(
-              vertical: MainScreenConstants.dialogPaddingVertical,
-              horizontal: MainScreenConstants.dialogPaddingHorizontal),
-          child:     Text(AppLocalizations.of(context)!.permissonApp,
-            style: ThemeText.titleStyle.copyWith(
-                color: AppColor.thirdColor,
-                fontWeight: FontWeight.normal,
-            ),
-            textAlign: TextAlign.center,
-          ),),
+        padding: const EdgeInsets.symmetric(
+            vertical: MainScreenConstants.dialogPaddingVertical,
+            horizontal: MainScreenConstants.dialogPaddingHorizontal),
+        child: Text(
+          AppLocalizations.of(context)!.permissonApp,
+          style: ThemeText.titleStyle.copyWith(
+            color: AppColor.thirdColor,
+            fontWeight: FontWeight.normal,
+          ),
+          textAlign: TextAlign.center,
+        ),
+      ),
       btnOk: GestureDetector(
         onTap: () {
           Navigator.pop(context);

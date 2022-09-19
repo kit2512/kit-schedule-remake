@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:device_calendar/device_calendar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -11,8 +9,6 @@ import 'package:schedule/domain/usecase/schedule_usecase.dart';
 import 'package:schedule/presentation/journey/profile/bloc/profile_event.dart';
 import 'package:schedule/presentation/journey/profile/bloc/profile_state.dart';
 import 'package:schedule/service/services.dart';
-import 'package:timezone/data/latest.dart' as tz;
-import 'package:timezone/timezone.dart' as tz;
 
 class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
   final PersonalUseCase personalUS;
@@ -29,12 +25,11 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     required this.personalUS,
     required this.scheduleUS,
   }) : super(ProfileState(username: '', hasNoti: false, isLogIn: false));
-
   @override
   Stream<ProfileState> mapEventToState(ProfileEvent event) async* {
     if (event is GetUserNameInProfileEvent) {
       yield state.update(
-          username: (await ShareService().getUsername() as String),
+          username: await ShareService().getUsername(),
           hasNoti: (await ShareService().getHasNoti() as bool),
           isLogin: await _shareService.getIsSaveData());
     }

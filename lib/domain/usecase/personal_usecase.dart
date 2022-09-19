@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:developer';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:connectivity/connectivity.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:schedule/domain/entities/personal_schedule_entities.dart';
 import 'package:schedule/domain/repositories/personal_repositories.dart';
 
@@ -102,4 +102,10 @@ class PersonalUseCase {
   Future<void> deleteAllSchoolPersonal() async {
     await personalRepositories.deleteAllSchoolPersonalLocal();
   }
+
+  Future<void> deleteAllPersonalFirebase(String username) async {
+    await personalRepositories.deleteAllPersonalFirebase(username);
+  }
+
+  Future<void> deleteAllSchoolFirebase(String username) async {}
 }

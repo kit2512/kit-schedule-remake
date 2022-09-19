@@ -15,7 +15,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import ' language_select/ language_select.dart';
 import 'bloc/loader_bloc/loader_bloc.dart';
 import 'bloc/snackbar_bloc/bloc.dart';
-import 'bloc/snackbar_bloc/snackbar_bloc.dart';
 
 class MyApp extends StatefulWidget {
   final SharedPreferences prefs;
@@ -47,8 +46,9 @@ class _MyAppState extends State<MyApp> {
   @override
   Future<void> didChangeDependencies() async {
     bool? isEng = widget.prefs.getBool(KeyConstants.language);
+
     bool isEnglish() {
-      if (AppLocalizations.of(context)?.localeName == 'en') {
+      if (AppLocalizations.of(context)!.localeName == 'en') {
         return true;
       }
       return false;
@@ -71,7 +71,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
         designSize: Size(375, 812), //iPhone X size
-        builder: () => MultiBlocProvider(
+        builder: (context, child) => MultiBlocProvider(
             providers: _getProviders(),
             child: GestureDetector(
               onTap: () {

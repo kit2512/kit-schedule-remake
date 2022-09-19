@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:schedule/presentation/journey/main/main_constants.dart';
-import 'package:schedule/presentation/themes/theme_colors.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:schedule/presentation/themes/theme_colors.dart';
 import 'package:schedule/presentation/themes/theme_text.dart';
 import 'package:schedule/service/share_service.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'introduction_constants.dart';
 

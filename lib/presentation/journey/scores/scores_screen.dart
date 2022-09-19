@@ -1,6 +1,5 @@
 import 'dart:developer';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -27,8 +26,8 @@ class ScoresScreen extends StatelessWidget {
         builder: (context, scoresState) {
       return !scoresState.isLogin
           ? Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20.h),
-            child: Center(
+              padding: EdgeInsets.symmetric(horizontal: 20.h),
+              child: Center(
                 child: Text(
                   AppLocalizations.of(context)!.introInScoreScreen,
                   style: ThemeText.labelStyle.copyWith(
@@ -37,7 +36,7 @@ class ScoresScreen extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
               ),
-          )
+            )
           : Scaffold(
               backgroundColor: AppColor.secondColor,
               appBar: AppBar(
@@ -212,7 +211,7 @@ class ScoresScreen extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         child: RichText(
           text: TextSpan(
-            text: '${title}: ',
+            text: '$title: ',
             style: ThemeText.titleStyle2
                 .copyWith(color: AppColor.personalScheduleColor2),
             children: <TextSpan>[

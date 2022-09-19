@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:schedule/presentation/journey/sign_in_screen.dart/bloc/register_bloc.dart';
 import 'package:schedule/presentation/journey/sign_in_screen.dart/bloc/register_state.dart';
@@ -8,10 +8,9 @@ import 'package:schedule/presentation/journey/sign_in_screen.dart/sign_in_consta
 import 'package:schedule/presentation/journey/sign_in_screen.dart/widgets/app_bar_widget.dart';
 import 'package:schedule/presentation/themes/theme_colors.dart';
 import 'package:schedule/presentation/themes/theme_text.dart';
-
-import 'package:schedule/presentation/widget/text_field_widget/text_field_widget.dart';
 import 'package:schedule/presentation/widget/loading_widget/loading_widget.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:schedule/presentation/widget/text_field_widget/text_field_widget.dart';
+
 class SignInView extends StatefulWidget {
   @override
   _SignInViewState createState() => _SignInViewState();
@@ -28,7 +27,7 @@ class _SignInViewState extends State<SignInView> {
     return BlocConsumer<RegisterBloc, RegisterState>(
       listener: (context, state) {
         if (state is RegisterSuccessState) {
-          Navigator.pop(context,true);
+          Navigator.pop(context, true);
         }
         if (state is RegisterFailureState) {}
         if (state is RegisterNoDataState) {}
@@ -43,8 +42,7 @@ class _SignInViewState extends State<SignInView> {
             body: SingleChildScrollView(
               child: Container(
                 margin: EdgeInsets.symmetric(
-                    horizontal: SignInConstants
-                        .horizontalScreen),
+                    horizontal: SignInConstants.horizontalScreen),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -67,7 +65,6 @@ class _SignInViewState extends State<SignInView> {
                     ),
                     SizedBox(
                       height: SignInConstants.paddingTextToTextFiled,
-
                     ),
                     Form(
                         key: _textFormKey,

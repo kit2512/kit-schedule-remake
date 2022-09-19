@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:schedule/presentation/journey/sign_in_screen.dart/sign_in_constants.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   @override
@@ -10,7 +10,9 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
       child: Container(
         child: Row(
           children: [
-            BackButton(color: SignInConstants.colorDefault,),
+            BackButton(
+              color: SignInConstants.colorDefault,
+            ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -23,7 +25,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
                       fontSize: SignInConstants.sizeLoginTxt),
                 ),
                 SizedBox(
-                  height:  5.h,
+                  height: 5.h,
                 ),
                 Container(
                   width: SignInConstants.widthLineLogin,
@@ -34,7 +36,6 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
                 ),
               ],
             ),
-
           ],
         ),
       ),

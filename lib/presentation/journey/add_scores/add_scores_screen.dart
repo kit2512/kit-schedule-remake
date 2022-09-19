@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:schedule/common/enums/view_state.dart';
 import 'package:schedule/common/utils/convert.dart';
@@ -11,7 +12,6 @@ import 'package:schedule/presentation/journey/add_scores/bloc/add_score_state.da
 import 'package:schedule/presentation/journey/search_subject/search_subject_dialog.dart';
 import 'package:schedule/presentation/themes/theme_colors.dart';
 import 'package:schedule/presentation/themes/theme_text.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:schedule/presentation/widget/text_field_widget/text_field_widget.dart';
 
 class AddScoresScreen extends StatelessWidget {
@@ -96,8 +96,10 @@ class AddScoresScreen extends StatelessWidget {
                             child: Padding(
                               padding: EdgeInsets.all(18.sp),
                               child: Text(
-                                addScoreState.subject.subjectName ==''?
-                                    AppLocalizations.of(context)!.chooseSubject: addScoreState.subject.subjectName!,
+                                addScoreState.subject.subjectName == ''
+                                    ? AppLocalizations.of(context)!
+                                        .chooseSubject
+                                    : addScoreState.subject.subjectName!,
                                 style: ThemeText.labelStyle
                                     .copyWith(fontSize: 14.sp),
                               ),
